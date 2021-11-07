@@ -407,6 +407,7 @@ ADMIN:
     }
     if ((pass == "qwerty" && username == "vaibhav") || (pass == "qwerty" && username == "vikas"))
     {
+        loading();
         menu();
     }
     else
@@ -424,6 +425,25 @@ ADMIN:
             return;
         }
     }
+}
+
+void loading()
+{
+    // char x=219;
+    char x = 254;
+    cout << "\n\n\n\n\n\n";
+    cout << "\t\t\t\t\t\t\t\t\tPHONEBOOK MANAGEMENT SYSTEM\n ";
+    cout << "\t\t\t\t\t\t\t\tLoading: ";
+    for (int i = 0; i < 35; i++)
+    {
+        cout << x;
+        Sleep(100);
+        if (i > 10 && i <= 20)
+            Sleep(50);
+        if (i > 20)
+            Sleep(25);
+    }
+    system("cls");
 }
 
 int main()
@@ -448,6 +468,7 @@ int main()
         switch (ch)
         {
         case 1:
+            loading();
             menuUser();
             break;
         case 2:
