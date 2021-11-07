@@ -7,6 +7,7 @@ using namespace std;
 map<string, long long int> contacts;
 
 void menu();
+void loading();
 
 struct trie
 {
