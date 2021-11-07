@@ -5,6 +5,7 @@
 using namespace std;
 
 map<string, long long int> contacts;
+
 void menu();
 
 struct trie
@@ -261,6 +262,10 @@ void displayAll()
 {
     for (auto mp : contacts)
     {
+        cout << "\n\t\t\t\t\t\t\t\t"
+             << "NAME"
+             << "   "
+             << "NUMBER";
         cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
     }
     return;
@@ -279,6 +284,10 @@ void searchByname()
         if (mp.first == nm)
         {
             cout << "\n\t\t\t\t\t\t\t\tCONTACT FOUND!!";
+            cout << "\n\t\t\t\t\t\t\t\t"
+                 << "NAME"
+                 << "   "
+                 << "NUMBER";
             cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
             f = 1;
         }
@@ -309,6 +318,10 @@ START:
         if (mp.second == ph)
         {
             cout << "\n\t\t\t\t\t\t\t\tCONTACT FOUND!!";
+            cout << "\n\t\t\t\t\t\t\t\t"
+                 << "NAME"
+                 << "   "
+                 << "NUMBER";
             cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
             f = 1;
         }
