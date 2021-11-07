@@ -260,12 +260,12 @@ void removeContact()
 
 void displayAll()
 {
+    cout << "\n\t\t\t\t\t\t\t\t"
+         << "NAME"
+         << "      "
+         << "NUMBER";
     for (auto mp : contacts)
     {
-        cout << "\n\t\t\t\t\t\t\t\t"
-             << "NAME"
-             << "   "
-             << "NUMBER";
         cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
     }
     return;
@@ -286,7 +286,7 @@ void searchByname()
             cout << "\n\t\t\t\t\t\t\t\tCONTACT FOUND!!";
             cout << "\n\t\t\t\t\t\t\t\t"
                  << "NAME"
-                 << "   "
+                 << "      "
                  << "NUMBER";
             cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
             f = 1;
@@ -320,7 +320,7 @@ START:
             cout << "\n\t\t\t\t\t\t\t\tCONTACT FOUND!!";
             cout << "\n\t\t\t\t\t\t\t\t"
                  << "NAME"
-                 << "   "
+                 << "      "
                  << "NUMBER";
             cout << "\n\t\t\t\t\t\t\t\t" << mp.first << "   " << mp.second;
             f = 1;
